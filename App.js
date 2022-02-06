@@ -7,8 +7,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import MapScreen from './screens/MapScreen';
 
-const Stack = createNativeStackNavigator();
 export default function App() {
+  const Stack = createNativeStackNavigator();
   return (
     <Provider store={store}>
       <StatusBar barStyle="dark-content" />
