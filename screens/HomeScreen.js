@@ -7,6 +7,7 @@ import NavOptions from '../components/NavOptions';
 import { API_KEY } from '@env';
 import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin } from '../slices/navSlice';
+import NavFavorites from '../components/NavFavorites';
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -54,6 +55,7 @@ const HomeScreen = () => {
           fetchDetails={true}
         />
         <NavOptions />
+        <NavFavorites />
       </View>
     </SafeAreaView>
   );

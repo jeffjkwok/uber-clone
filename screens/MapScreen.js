@@ -1,4 +1,4 @@
-import { KeyboardAvoidingView, View, StyleSheet } from 'react-native';
+import { KeyboardAvoidingView, View, StyleSheet, Platform } from 'react-native';
 import React from 'react';
 import tw from 'tailwind-react-native-classnames';
 import Map from '../components/Map';
@@ -12,6 +12,7 @@ const MapScreen = () => {
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       style={styles.container}
+      keyboardVerticalOffset={Platform.OS === 'ios' ? -64 : 0}
     >
       <View style={tw`h-1/2`}>
         <Map />
@@ -37,25 +38,6 @@ const MapScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1
-  },
-  inner: {
-    padding: 24,
-    flex: 1,
-    justifyContent: 'space-around'
-  },
-  header: {
-    fontSize: 36,
-    marginBottom: 48
-  },
-  textInput: {
-    height: 40,
-    borderColor: '#000000',
-    borderBottomWidth: 1,
-    marginBottom: 36
-  },
-  btnContainer: {
-    backgroundColor: 'white',
-    marginTop: 12
   }
 });
 

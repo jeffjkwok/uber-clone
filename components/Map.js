@@ -19,6 +19,8 @@ const Map = () => {
     });
   }, [origin, destination]);
 
+  useEffect(() => {}, [origin, destination, API_KEY]);
+
   return (
     <MapView
       ref={mapRef}
@@ -37,7 +39,7 @@ const Map = () => {
           destination={destination.description}
           apikey={API_KEY}
           strokeColor="black"
-          strockWidth={5}
+          strokeWidth={3}
         />
       )}
 
