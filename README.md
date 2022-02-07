@@ -2,9 +2,9 @@
 
 Using mainly Expo, React Native, Redux, Tailwind, and Google Apis, I created a clone of Uber. Wanted to take a look at the React Native Ecosystem and some other popular packages.
 
-![demo1](https://github.com/jeffjkwok/uber-clone/blob/master/1.png)
-![demo2](https://github.com/jeffjkwok/uber-clone/blob/master/2.png)
-![demo3](https://github.com/jeffjkwok/uber-clone/blob/master/3.png)
+![demo1](https://github.com/jeffjkwok/uber-clone/blob/master/demo/1.png)
+![demo2](https://github.com/jeffjkwok/uber-clone/blob/master/demo/2.png)
+![demo3](https://github.com/jeffjkwok/uber-clone/blob/master/demo/3.png)
 
 ## Available Scripts
 
